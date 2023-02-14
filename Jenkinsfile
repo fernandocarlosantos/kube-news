@@ -15,8 +15,8 @@ pipeline {
             steps{
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', dockerhub)
-                        dockerapp.push ('lastest')
-                        dockerapp.push ("${env.BUILD_ID}")
+                        dockerapp.Push ('lastest')
+                        dockerapp.Push ("${env.BUILD_ID}")
                 }
 
 
